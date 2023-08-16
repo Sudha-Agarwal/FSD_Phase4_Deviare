@@ -35,3 +35,6 @@ serverRequest1(function printData1(data){
 serverRequest1(function(data){
     console.log(data);
 });
+
+//fourth way with arrow functions
+serverRequest1(data => console.log(data));
