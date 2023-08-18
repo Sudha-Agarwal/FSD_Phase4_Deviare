@@ -1,0 +1,27 @@
+<p>bindings works!</p>
+
+<h1>Hello</h1>
+
+<!-- String interpolation-->
+<p>{{Componentname}}</p>
+
+<img src="../assets/bootstrap-4-logo-png-transparent.png" style="width:20%;height:20%">
+
+<!--Property binding-->
+<img [src] = "imgSrc" style="width:20%;height:20%"/>
+
+<button [disabled] = "isValid">Click me</button>
+
+<!--event binding-->
+<button (click) = "onButtonClick()">Click me</button>
+<p>Button Clicked: {{buttonClickedCount}}</p>
+
+<div [class.red]="isRed">Class binding</div>
+
+<div [ngClass] = "{'active': isActive, 'disabled': isDisabled}">NgClass Directive</div>
+
+<div [style.color] = "'red'">Style Binding</div>
+
+<button [style.opacity] = "isOpaque?1:0.5">Style binding</button>
+
+<div [ngStyle] = "{'font-size': '20px', 'color':'red'}">Style Directive</div>
