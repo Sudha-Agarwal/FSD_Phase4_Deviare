@@ -25,3 +25,8 @@ sum(1);
 sum(1,2);
 sum(1,2,3);
 sum(1,2,3,4);
+
+let x = 10;
+x = "Hello";
+
+console.log(x);
