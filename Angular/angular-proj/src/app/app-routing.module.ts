@@ -7,6 +7,8 @@ import { ProductMobileListComponent } from './product-mobile-list/product-mobile
 import { ProductLaptopListComponent } from './product-laptop-list/product-laptop-list.component';
 import { ProductMobileDetailComponent } from './product-mobile-detail/product-mobile-detail.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { ModelRegisterationFormComponent } from './model-registeration-form/model-registeration-form.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -19,7 +21,9 @@ const routes: Routes = [
     {path:'mobile-detail/:id', component: ProductMobileDetailComponent}
   ]
 },
-{path:'login-form', component: LoginFormComponent}
+{path:'login-form', component: LoginFormComponent},
+{path: 'model-registeration-form', component: ModelRegisterationFormComponent},
+{path: 'pipes', component:PipesComponent}
 ];
 
 @NgModule({

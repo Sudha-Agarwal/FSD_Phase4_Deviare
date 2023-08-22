@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
@@ -11,6 +11,10 @@ import { ProductMobileListComponent } from './product-mobile-list/product-mobile
 import { ProductLaptopListComponent } from './product-laptop-list/product-laptop-list.component';
 import { ProductMobileDetailComponent } from './product-mobile-detail/product-mobile-detail.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { ModelRegisterationFormComponent } from './model-registeration-form/model-registeration-form.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +25,18 @@ import { LoginFormComponent } from './login-form/login-form.component';
     ProductMobileListComponent,
     ProductLaptopListComponent,
     ProductMobileDetailComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    ModelRegisterationFormComponent,
+    PipesComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

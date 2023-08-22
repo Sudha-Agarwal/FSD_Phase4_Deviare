@@ -1,0 +1,22 @@
+<div class="container">
+<p>{{convertText | uppercase}}</p>
+
+<p>The birthday is on {{birthday | date}}</p>
+<p>The birthday is on {{birthday | date: "MM/dd/yy"}}</p>
+<p>The birthday is on {{birthday | date:format}}</p>
+<p>The birthday is on {{birthday | date: format | uppercase}}</p>
+
+<div>
+    <h3>Currency pipes</h3>
+    <p>{{itemPrice | currency:'INR':true}}</p>
+</div>
+
+<p>{{num | percent}}</p>
+
+<div *ngIf = "userList$ | async as userList">
+    <ul>
+        <li *ngFor = "let user of userList">{{user.name}}</li>
+    </ul>
+    </div>
+
+</div>

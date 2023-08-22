@@ -1,0 +1,6 @@
+<app-child [receivedData] = "dataFromParent"></app-child>
+
+<app-child (dataEmiiter)="handleChildData($event)"></app-child>
+<p>Received data in Parent {{receivedData}}</p>
+
+<p>Received data in Parent view ViewChild{{receivedData1}}</p>
